@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <section class="todo">
+      <h1 class="mt-4">Todolist</h1>
+      <input class="new-todo" placeholder="What need to be done?" id="input" />
+
+      <section class="main">
+        <input id="check-all" class="check-all" type="checkbox" />
+        <label class="hidden" id="label-check-all">Mark all as complete</label>
+        <ul id="todo-list" class="todo-list"></ul>
+      </section>
+
+      <div class="footer-section hidden" id="footer">
+        <span class="count"><strong id="item-left">0</strong> items left</span>
+        <ul class="filters d-flex justify-content-end">
+          <li class="mr-3">
+            <a id="find-all" class="selected filtro">All</a>
+          </li>
+          <li class="mr-3">
+            <a id="find-active" class="filtro">Active</a>
+          </li>
+          <li class="mr-3">
+            <a id="find-complete" class="filtro">Completed</a>
+          </li>
+          <button class="clear-completed hidden" id="clear-completed">Clear completed</button>
+        </ul>
+      </div> 
+    </section>
+    <script type="module" src="./public/index.js"></script>
+  </body>
+</html>
